@@ -39,13 +39,17 @@ Usage
 6) Outputs: Genome-wide plot of variants per genotype (PDF file) and a summary of the Cochran-Armitage Test per chromosome (PDF file)
 
 Contributors
+
 genotype_variants.R is made by Carlos Farkas
 
 Support
+
 email
+
 Please report any issues or questions by email to cfarkas@udec.cl or carlosfarkas@gmail.com.
 
 Test 
+
 We provide two Filtered VCF files from a RNA-seq analysis of MEFs (Mouse embryonic fibroblasts) isolated from STC1+/+ and STC1-/- mice https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE47395 under GeoDataset accesion GSE47395. 
 
 
