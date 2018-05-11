@@ -1,13 +1,13 @@
 # Genotype-variants
 An R script for the visualization of RNA-seq variants from genetically engineered mouse models
 
-What is Genotype variants?
+What is Genotype variants.R?
 
 Genotype Variants is a R script for adequate visualization of RNA-seq variants on the mouse mm10 build, based on VCF files (Variant Calling Format files, http://samtools.github.io/hts-specs/VCFv4.3.pdf). This R script takes as input two filtered VCF files (from wild-type and KO/KI genotypes, respectively) and output genome-wide plots of variants per genotype, including a summary of chomosomes with differential distribution of variants among genotypes. 
 
 Input Preparation
 
-To collect RNA-seq variants, BAM files from the alignment of RNA-seq reads are sorted and genome-wide simple diploid calling is applied by using Freebayes (https://github.com/ekg/freebayes). Raw VCF files are further processed using the VCFlib toolkit (https://github.com/vcflib/vcflib). VCF files needs to be intersected among biological replicates from each genotype (VCF-VCF intersect tool) and the resulting VCF file is then filtered using and adequate criteria. Finally, multiple allelic primitives (gaps or mismatches) are splitted using the Vcfallelicprimitives tool from the VCFlib toolkit. This pipeline can be fully implemented using the galaxy tools (https://usegalaxy.org/) setting the adequate version of the tools, as follows (May 11, 2018):
+To collect RNA-seq variants, BAM files from the alignment of RNA-seq reads are sorted and genome-wide simple diploid calling is performed by using Freebayes (https://github.com/ekg/freebayes). Raw VCF files are further processed using the VCFlib toolkit (https://github.com/vcflib/vcflib). VCF files needs to be intersected among biological replicates from each genotype (VCF-VCF intersect tool) and the resulting VCF file is then filtered using and adequate criteria. Finally, multiple allelic primitives (gaps or mismatches) are splitted using the Vcfallelicprimitives tool from the VCFlib toolkit. This pipeline can be fully implemented using the galaxy tools (https://usegalaxy.org/) setting the adequate version of the tools, as follows (May 11, 2018):
 
 1) Input: Sorted BAM file from alignment (e.g HISAT)
 2) FreeBayes: Simple diploid calling, default settings (Galaxy Version 1.1.0.46-0)
@@ -18,7 +18,7 @@ To collect RNA-seq variants, BAM files from the alignment of RNA-seq reads are s
 
 Script Outline
 
-Inputted variants are binned every 10 million base pairs according to its chromosomal coordinates (mm10 build: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.26) and ordered in a contingency table. After this, frequency distribution of variants is tested applying the Cochran-Armitage test for trend distribution, available in the DescTools package in R. (https://cran.r-project.org/web/packages/DescTools/index.html). The program will generate a genome-wide plot of variants per genotype based on the ggplot2 R package (https://cran.r-project.org/web/packages/ggplot2/index.html) and a summary of chromosomes containing KO/KI-ligated variants, based on the frequency distribution of wild-type and KO/KI genotypes. 
+Inputted variants are binned every 10 million base pairs according to its chromosomal coordinates (mm10 build: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.26) and ordered in a contingency table. After this, frequency distribution of variants is tested by applying the Cochran-Armitage test for trend distribution, available in the DescTools package in R. (https://cran.r-project.org/web/packages/DescTools/index.html). The program will generate a genome-wide plot of variants per genotype based on the ggplot2 R package (https://cran.r-project.org/web/packages/ggplot2/index.html) and a summary of chromosomes containing KO/KI-ligated variants, based on the frequency distribution of wild-type and KO/KI genotypes. 
 
 R Dependences
 
