@@ -11,7 +11,7 @@ To collect RNA-seq variants, BAM files from the alignment of RNA-seq reads are s
 
 1) Input: Sorted BAM file from alignment (e.g HISAT)
 2) FreeBayes: Simple diploid calling, default settings (Galaxy Version 1.1.0.46-0)
-3) VCFfilter:    -f "QUAL > 30 " (Depth over 10 reads), "DP > 10" (minimum Phred-scaled probability of error over 30) (Galaxy Version 1.0.0_rc1+galaxy1)
+3) VCFfilter:  We suggest  -f "QUAL > 30 " (Depth over 10 reads), "DP > 10" (minimum Phred-scaled probability of error over 30) (Galaxy Version 1.0.0_rc1+galaxy1)
 4) VcfAllelicPrimitives: Split allelic primitives into multiple VCF lines, default settings (Galaxy Version 0.0.3)
 5) VCF-VCF Intersect: on WT and Null VCF files, mm10 build (Galaxy Version 1.0.0_rc1+galaxy0)
 
