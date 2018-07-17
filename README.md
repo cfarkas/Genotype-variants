@@ -3,7 +3,7 @@ An R script for the visualization of RNA-seq variants from genetically engineere
 
 What is Genotype variants.R?
 
-Genotype Variants is a R script for adequate visualization of RNA-seq variants on the mouse mm10 build, based on VCF files (Variant Calling Format files, http://samtools.github.io/hts-specs/VCFv4.3.pdf). This R script takes as input two filtered VCF files (from wild-type and KO/KI genotypes, respectively) and output genome-wide plots of variants per genotype, including a summary of chromosomes with differential distribution of variants among genotypes. 
+Genotype Variants is an R script for adequate visualization of RNA-seq variants on the mouse mm10 build, based on VCF files (Variant Calling Format files, http://samtools.github.io/hts-specs/VCFv4.3.pdf). This R script takes as input two filtered VCF files (from wild-type and KO/KI genotypes, respectively) and output genome-wide plots of variants per genotype, including a summary of chromosomes with differential distribution of variants among genotypes. 
 
 Input Preparation
 
