@@ -135,7 +135,8 @@ Using 45 threads for freebayes and assuming replicates only for the KO genotype.
 
 >bash ./sort_bam.sh<br/>bash ./variant_collection.sh /path/to/mm10.fa 45<br/>bash ./filtering_combined_mouse.sh <br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /path/to/mm10.fa
 
-These lines can be also executed in BASH (see and edit Config_example.sh in scripts folder) by simply typying:<br/> >bash ./Config_example.sh
+These lines can be also executed in BASH (see and edit Config_example.sh in scripts folder) by simply typying:
+>bash ./Config_example.sh
 ###
 
 Contributors
