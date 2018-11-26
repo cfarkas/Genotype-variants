@@ -7,10 +7,10 @@ Genotype Variants is an automated BASH/R pipeline for the adequate visualization
 The input could be BAM files from a splice-aware aligner: e.g. HISAT2 or BAM files from Bowtie2 or BWA (form WES/WGS data)
                   
 To collect variants, BAM files from the alignment of RNA-seq/WES/WGS reads are sorted and genome-wide simple diploid calling is performed with Freebayes (see https://github.com/ekg/freebayes). Raw VCF files are further processed using the VCFlib toolkit (https://github.com/vcflib/vcflib). VCF files needs to be intersected among biological replicates from each genotype (VCF-VCF intersect tool) and the resulting VCF file is then filtered using an adequate criteria. Finally, a variant normalization step is performed with the VcfAllelicPrimitives tool from VCFlib, simplifying multi-nucleotides variants (MNPs) into primitive alleles.  
-The pipeline can be executed in:
+The pipeline can be executed in two ways:
 
-1) Galaxy to obtain the intersected VCF files per genotype and then in R (from windows and Max OSX)
-2) Fully automated in BASH by using a simple config file.
+A) Galaxy to obtain the intersected VCF files per genotype and then in R (from windows and Max OSX)
+B) Fully automated in BASH by using a simple config file.
 
 ##################################################################################################
 
@@ -41,8 +41,8 @@ DescTools_0.99.23
 
 Usage
 1) Place genotype_variants.R and the VCF files (wild-type and KO/KI outputs after the galaxy pipeline) in the same folder
-2) Open genotype_variants.R file through R (go to Archive --> Open Script)
-3) Execute all lines (windows: Edit --> Execute All)
+2) Open genotype_variants.R file through R (go to File --> Open Script/Document)
+3) Execute all lines (Edit --> Select all, and then Edit --> Execute)
 4) A prompted window will ask for the wild-type VCF file. Select it. 
 5) A prompted window will ask for the KO/KI VCF file. Select it
 6) Output: Genome-wide plot of variants per genotype (PDF file) and a summary of the Cochran-Armitage Test per chromosome (PDF file)
