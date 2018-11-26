@@ -127,30 +127,43 @@ Complete instructions can be found in README and in https://samtools.github.io/b
 
 ## Execution:
 Place the following scripts in a folder
-> sort_bam.sh,
-> variant_collection.sh,
-> filtering_combined_mouse.sh,
-> genotype_variants_mouse.sh,
+> sort_bam.sh
+
+> variant_collection.sh
+
+> filtering_combined_mouse.sh
+
+> genotype_variants_mouse.sh
+
 > genotype_variants_mouse_linux.R
 
 Also, place the following files in the folder
 > mm10.fa (indexed with samtools faidx)
+
 > BAM files from wild-type (WT) and knockout (KO) genotypes
 
 Using 45 threads for freebayes and assuming replicates per each genotype:
 
 >bash ./sort_bam.sh
+
 >bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45
+
 >bash ./filtering_combined_mouse.sh 
+
 >cd vcf_outputs/
+
 >bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
 
 Using 45 threads for freebayes and assuming replicates only for the KO genotype:
 
 >bash ./sort_bam.sh
+
 >bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45
+
 >bash ./filtering_combined_mouse.sh 
+
 >cd vcf_outputs/
+
 >bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
 
 ###
