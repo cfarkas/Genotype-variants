@@ -90,12 +90,14 @@ To check installation, type in terminal:
 ### Obtaining and installing vcflib:
 Clone vcflib folder in current directory:
 >git clone --recursive git://github.com/vcflib/vcflib.git
+
 Enter vcflib directory and make
 >cd vcflib/
 
->make   #If you want to use threading type make openmp instead of make. Only a few VCFLIB tools are threaded.
+>make   
 
 After make, binaries and scripts can be copied in /usr/local/bin with sudo:
+
 in vcflib/ directory:
 >sudo cp scripts/* /usr/local/bin/
 
