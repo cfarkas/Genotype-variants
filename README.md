@@ -1,6 +1,6 @@
 # Genotype-variants: An streamlined pipeline for the genetic characterization of Genetically Engineered Mice (GEM) models based on NGS data. 
 
-Pipeline Outline
+## Pipeline Outline
 
 Genotype Variants is an automated BASH/R pipeline for the adequate visualization of RNA-seq variants on the mouse mm10 build, based on VCF files (Variant Calling Format files, http://samtools.github.io/hts-specs/VCFv4.3.pdf). The pipeline takes as input BAM files from RNA-Seq, whole exome sequencing (WES) or whole genome sequencing (WGS) from wild-type and KO/KI genotypes. The pipeline call variants in each sampĺe with the Freebayes variant caller, intersect variants from each genotype and outputs filtered VCF files per genotype, genome-wide plots of variants and a summary of chromosomes with differential distribution of variants among genotypes. This pipeline can be fully implemented using the main galaxy tools (https://usegalaxy.org/). 
 
