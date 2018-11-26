@@ -96,9 +96,8 @@ Enter vcflib directory and make
 
 >make   
 
-After make, binaries and scripts can be copied in /usr/local/bin with sudo.
+After make, binaries and scripts can be copied in /usr/local/bin with sudo. In vcflib/ directory:
 
-in vcflib/ directory:
 >sudo cp scripts/* /usr/local/bin/
 
 >sudo cp bin/* /usr/local/bin/
