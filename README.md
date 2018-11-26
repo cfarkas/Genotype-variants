@@ -81,6 +81,7 @@ Enter Freebayes directory and make:
 
 To install to e.g. /usr/local/bin (default), type:
 >sudo make install
+
 To check installation, type in terminal:
 >freebayes
 
