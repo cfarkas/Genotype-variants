@@ -55,7 +55,7 @@ DescTools >=0.99.23
 
 # BASH pipeline:
 
-Users can execute the pipeline in bash following a config file. This file will invoke four scripts (sort_bam.sh, variant_collection.sh, filtering_combined_mouse.sh and genotype_variants_mouse.sh) that should be present in the working folder along with the genotype_variants_mouse_linux.R script, the mm10.fa genome (properly indexed) and the BAM files (unsorted) from every genotype to analyze. 
+Users can execute the pipeline in bash executing a config file. This file will invoke four scripts (sort_bam.sh, variant_collection.sh, filtering_combined_mouse.sh and genotype_variants_mouse.sh) that should be present in the working folder along with the genotype_variants_mouse_linux.R script, the mm10.fa genome (properly indexed) and the BAM files (unsorted) from every genotype to analyze. 
 
 ## Preeliminars:
 
