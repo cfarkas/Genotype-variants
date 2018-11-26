@@ -141,11 +141,6 @@ These lines can be also executed in BASH (see and edit Config_example.sh in scri
 
 To perform these analysis, we reccomend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see in the scripts folder "README_ulimit" file with the instructions for accomplish this task.
 
-
-## Contributors
-
-genotype_variants pipeline was made by Carlos Farkas
-
 ## Support
 
 Please report any issues or questions by email to cfarkas@udec.cl or carlosfarkas@gmail.com.
