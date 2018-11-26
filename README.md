@@ -12,8 +12,6 @@ The pipeline can be executed in two ways:
 A) Galaxy to obtain the intersected VCF files per genotype and then in R (from windows and Max OSX)
 B) Fully automated in BASH by using a simple config file.
 
-##################################################################################################
-##################################################################################################
 
 # Galaxy Pipeline: 
 
@@ -50,8 +48,7 @@ DescTools >=0.99.23
 5) A prompted window will ask for the KO/KI VCF file. Select it
 6) Output: Genome-wide plot of variants per genotype (PDF file) and a summary of the Cochran-Armitage Test per chromosome (PDF file)
 
-##################################################################################################
-##################################################################################################
+
 
 # BASH pipeline:
 
