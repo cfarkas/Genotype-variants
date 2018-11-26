@@ -59,14 +59,14 @@ Users can execute the pipeline in bash executing a config file. This file will i
 
 ## Preeliminars:
 
-#Obtaining the Mouse Reference Genome:
+### Obtaining the Mouse Reference Genome:
 Download Mouse Reference Genome mm10: wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.2bit
 Download faToTwoBit script, available for linux and macOSX at http://hgdownload.cse.ucsc.edu/admin/exe/.
 Convert 2bit format to fasta: ./twoBitToFa mm10.2bit mm10.fa
 Index fasta file with samtools: samtools faidx mm10.fa
 
-#Obtaining and installing Freebayes:
-#Cloning Freebayes folder in current directory: 
+### Obtaining and installing Freebayes:
+Cloning Freebayes folder in current directory: 
 git clone --recursive git://github.com/ekg/freebayes.git
 Enter Freebayes directory and make:
 cd freebayes/
@@ -77,7 +77,7 @@ To check installation, type in terminal:
 freebayes
 bamleftalign
 
-#Obtaining and installing vcflib:
+### Obtaining and installing vcflib:
 Cloning vcflib folder in current directory:
 git clone --recursive git://github.com/vcflib/vcflib.git
 Enter vcflib directory and make
@@ -89,19 +89,19 @@ sudo cp scripts/* /usr/local/bin/
 sudo cp bin/* /usr/local/bin/
 To check vcflib scripts, type vcf in terminal followed by TAB and display all posibilities
 
-#Obtaining and Installing BEDTools
+### Obtaining and Installing BEDTools
 Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/content/installation.html
 Users with privileges can accomplish with sudo: sudo apt-get install bedtools
 
-#Obtaining and installing SAMtools
+### Obtaining and installing SAMtools
 Complete instructions can be found in README and in http://www.htslib.org/
 Users with privileges can accomplish with sudo: sudo apt-get install samtools
 
-#Obtaining and installing BamTools
+### Obtaining and installing BamTools
 Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing
 Users with privileges can accomplish with sudo: sudo apt install bamtools 
 
-#Obtaining and installing bcftools
+### Obtaining and installing bcftools
 Complete instructions can be found in README and in https://samtools.github.io/bcftools/
 Users with privileges can accomplish with sudo: sudo apt install bcftools 
 
