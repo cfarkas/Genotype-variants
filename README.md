@@ -72,32 +72,24 @@ Clone Freebayes folder in current directory:
 >git clone --recursive git://github.com/ekg/freebayes.git
 
 Enter Freebayes directory and make:
->cd freebayes/
-
->make
+>cd freebayes/<br/>make
 
 To install to e.g. /usr/local/bin (default), type:
 >sudo make install
 
 To check installation, type in terminal:
->freebayes
-
->bamleftalign
+>freebayes<br/>bamleftalign
 
 ### Obtaining and installing vcflib:
 Clone vcflib folder in current directory:
 >git clone --recursive git://github.com/vcflib/vcflib.git
 
 Enter vcflib directory and make
->cd vcflib/
-
->make   
+>cd vcflib/<br/>make   
 
 After make, binaries and scripts can be copied in /usr/local/bin with sudo. In vcflib/ directory:
 
->sudo cp scripts/* /usr/local/bin/
-
->sudo cp bin/* /usr/local/bin/
+>sudo cp scripts/* /usr/local/bin/<br/>sudo cp bin/* /usr/local/bin/
 
 To check vcflib scripts, type vcf in terminal followed by TAB and display all posibilities
 
@@ -136,19 +128,11 @@ Also, place the following files in the folder
 
 Using 45 threads for freebayes and assuming replicates per each genotype:
 
->bash ./sort_bam.sh<br/>bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45 <br/>bash ./filtering_combined_mouse.sh<br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
+>bash ./sort_bam.sh<br/>bash ./variant_collection.sh /path/to/mm10.fa 45 <br/>bash ./filtering_combined_mouse.sh<br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /path/to/mm10.fa
 
 Using 45 threads for freebayes and assuming replicates only for the KO genotype:
 
->bash ./sort_bam.sh
-
->bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45
-
->bash ./filtering_combined_mouse.sh 
-
->cd vcf_outputs/
-
->bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
+>bash ./sort_bam.sh<br/>bash ./variant_collection.sh /path/to/mm10.fa 45<br/>bash ./filtering_combined_mouse.sh <br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /path/to/mm10.fa
 
 ###
 
