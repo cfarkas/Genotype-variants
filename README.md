@@ -127,10 +127,10 @@ Complete instructions can be found in README and in https://samtools.github.io/b
 
 ## Execution:
 Place the following scripts in a folder
-> sort_bam.sh
-> variant_collection.sh
-> filtering_combined_mouse.sh
-> genotype_variants_mouse.sh
+> sort_bam.sh,
+> variant_collection.sh,
+> filtering_combined_mouse.sh,
+> genotype_variants_mouse.sh,
 > genotype_variants_mouse_linux.R
 
 Also, place the following files in the folder
