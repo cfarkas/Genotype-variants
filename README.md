@@ -13,8 +13,10 @@ A) Galaxy to obtain the intersected VCF files per genotype and then in R (from w
 B) Fully automated in BASH by using a simple config file.
 
 ##################################################################################################
+##################################################################################################
 
-Galaxy Pipeline:  
+#Galaxy Pipeline:  
+
 Go to https://usegalaxy.org/ and create an account. Users can also install Galaxy locally following these instructions: https://galaxyproject.org/admin/get-galaxy/
 
 1) Input: Sorted BAM file from alignment (e.g HISAT)
@@ -25,19 +27,19 @@ Go to https://usegalaxy.org/ and create an account. Users can also install Galax
 
 At this step, users needs to execute the genotype_variants.R script (on windows or Mac OSX)
 
-Script Outline
+#Script Outline
 
 Inputted variants are binned every 10 million base pairs according to its chromosomal coordinates (mm10 build: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.26) and ordered in a contingency table. After this, frequency distribution of variants is tested by applying the Cochran-Armitage test for trend distribution, available in the DescTools package in R. (https://cran.r-project.org/web/packages/DescTools/index.html). The program will generate a genome-wide plot of variants per genotype based on the ggplot2 R package (https://cran.r-project.org/web/packages/ggplot2/index.html) and a summary of chromosomes containing KO/KI-ligated variants, based on the frequency distribution of wild-type and KO/KI genotypes. 
 
-R Dependences
+#R Dependences
 
-The following R/Bioconductor packages are required for the script usage (see https://www.bioconductor.org/)
+The following R/Bioconductor packages are required for the script usage (see https://www.bioconductor.org/ for installation)
 
-dplyr_0.7.4       
-gridExtra_2.3     
-reshape2_1.4.2    
-ggplot2_2.2.1    
-DescTools_0.99.23
+dplyr >=0.7.4       
+gridExtra >=2.3     
+reshape2 >=1.4.2    
+ggplot2 >=2.2.1    
+DescTools >=0.99.23
 
 Usage
 1) Place genotype_variants.R and the VCF files (wild-type and KO/KI outputs after the galaxy pipeline) in the same folder
