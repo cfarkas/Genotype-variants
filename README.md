@@ -1,5 +1,4 @@
-# Genotype-variants
-An streamlined pipeline for the genetic characterization of Genetically Engineered Mice (GEM) models based on NGS data. 
+# Genotype-variants: An streamlined pipeline for the genetic characterization of Genetically Engineered Mice (GEM) models based on NGS data. 
 
 Pipeline Outline
 
