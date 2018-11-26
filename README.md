@@ -136,15 +136,7 @@ Also, place the following files in the folder
 
 Using 45 threads for freebayes and assuming replicates per each genotype:
 
->bash ./sort_bam.sh
-
->bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45
-
->bash ./filtering_combined_mouse.sh 
-
->cd vcf_outputs/
-
->bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
+>bash ./sort_bam.sh<br/>bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45 <br/>bash ./filtering_combined_mouse.sh<br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
 
 Using 45 threads for freebayes and assuming replicates only for the KO genotype:
 
