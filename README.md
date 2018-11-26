@@ -125,7 +125,8 @@ The reference genome for freebayes:
 > mm10.fa (indexed with samtools faidx)
 
 and the renamed BAM files from wild-type (WT) and knockout (KO) genotypes with the "WT" and "KO" prefix. e.g.:
-> WT1.bam<br/>WT2.bam<br/>KO1.bam<br/>KO2.bam<br/>#In the case of just one replicate, BAM files must be renamed "WT.bam" or "KO.bam", correspondingly.
+> WT1.bam<br/>WT2.bam<br/>KO1.bam<br/>KO2.bam<br/>
+#In the case of just one replicate, BAM files must be renamed "WT.bam" or "KO.bam", correspondingly.
 
 Open a terminal and paste the following lines. Using 45 threads for freebayes and assuming replicates per each genotype:
 
