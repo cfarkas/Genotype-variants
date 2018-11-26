@@ -140,7 +140,7 @@ These lines can be also executed in BASH (see and edit Config_example.sh in scri
 >bash ./Config_example.sh
 ###
 
-To perform these analysis, we recommend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see in the scripts folder "README_ulimit" file with the instructions for accomplish this task.
+To perform these analysis, we recommend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see "README_ulimit" file with the instructions for accomplish this task.
 
 ## Support
 
