@@ -13,7 +13,7 @@ The pipeline can be executed in:
 1) Galaxy to obtain the intersected VCF files per genotype and then in R (from windows and Max OSX)
 2) Fully automated in BASH by using a simple config file.
 
-################################################################################################################################
+##################################################################################################
 
 Galaxy Pipeline:  
 Go to https://usegalaxy.org/ and create an account. Users can also install Galaxy locally following these instructions: https://galaxyproject.org/admin/get-galaxy/
@@ -48,7 +48,7 @@ Usage
 5) A prompted window will ask for the KO/KI VCF file. Select it
 6) Output: Genome-wide plot of variants per genotype (PDF file) and a summary of the Cochran-Armitage Test per chromosome (PDF file)
 
-################################################################################################################################
+##################################################################################################
 
 
 
