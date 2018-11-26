@@ -131,7 +131,7 @@ Open a terminal and paste the following lines. Using 45 threads for freebayes an
 
 >bash ./sort_bam.sh<br/>bash ./variant_collection.sh /path/to/mm10.fa 45 <br/>bash ./filtering_combined_mouse.sh<br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /path/to/mm10.fa
 
-Using 45 threads for freebayes and assuming replicates only for the KO genotype, users need to change the "intersection" prefix for "filtered". E.g. with a single replicate in WT:
+Using 45 threads for freebayes and assuming replicates only for the KO genotype. In this case, users need to change the "intersection" prefix for "filtered" (e.g. with a single replicate in WT):
 
 >bash ./sort_bam.sh<br/>bash ./variant_collection.sh /path/to/mm10.fa 45<br/>bash ./filtering_combined_mouse.sh <br/>cd vcf_outputs/<br/>bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /path/to/mm10.fa
 
