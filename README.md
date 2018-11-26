@@ -52,7 +52,7 @@ DescTools >=0.99.23
 
 # BASH pipeline:
 
-Users can execute the pipeline in bash executing a config file. This file will invoke four scripts (sort_bam.sh, variant_collection.sh, filtering_combined_mouse.sh and genotype_variants_mouse.sh) that should be present in the working folder along with the genotype_variants_mouse_linux.R script, the mm10.fa genome (properly indexed) and the BAM files (unsorted) from every genotype to analyze. 
+Users can execute the pipeline by using several scripts sequentially: sort_bam.sh (for sorting BAM files), variant_collection.sh (for calling variants with freebayes) ,filtering_combined_mouse.sh (filtering and intersection of VCF files) and genotype_variants_mouse.sh (obtention of KO-ligated variants and R plots). These four scripts should be present in the working folder along with the genotype_variants_mouse_linux.R script, the mm10.fa genome (in FASTA format, properly indexed) and the BAM files (unsorted) from every genotype to analyze. 
 
 ## Preeliminars:
 
@@ -126,7 +126,34 @@ Complete instructions can be found in README and in https://samtools.github.io/b
 >sudo apt install bcftools 
 
 ## Execution:
+Place the following scripts in a folder
+> sort_bam.sh
+> variant_collection.sh
+> filtering_combined_mouse.sh
+> genotype_variants_mouse.sh
+> genotype_variants_mouse_linux.R
 
+Also, place the following files in the folder
+> mm10.fa (indexed with samtools faidx)
+> BAM files from wild-type (WT) and knockout (KO) genotypes
+
+Using 45 threads for freebayes and assuming replicates per each genotype:
+
+>bash ./sort_bam.sh
+>bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45
+>bash ./filtering_combined_mouse.sh 
+>cd vcf_outputs/
+>bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
+
+Using 45 threads for freebayes and assuming replicates only for the KO genotype:
+
+>bash ./sort_bam.sh
+>bash ./variant_collection.sh /datos1/genotype_variants_mouse/mm10.fa 45
+>bash ./filtering_combined_mouse.sh 
+>cd vcf_outputs/
+>bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /datos1/genotype_variants_mouse/mm10.fa
+
+###
 
 Contributors
 
