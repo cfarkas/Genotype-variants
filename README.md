@@ -121,10 +121,12 @@ Complete instructions can be found in README and in https://samtools.github.io/b
 Place the following scripts in a folder
 > sort_bam.sh<br/>variant_collection.sh<br/>filtering_combined_mouse.sh<br/>genotype_variants_mouse.sh<br/>genotype_variants_mouse_linux.R
 
-Also, place the following files in the folder
+Also, the reference genome for freebayes:
 > mm10.fa (indexed with samtools faidx)
 
-> BAM files from wild-type (WT) and knockout (KO) genotypes
+And the renamed BAM files from wild-type (WT) and knockout (KO) genotypes with the "WT" and "KO" prefix. e.g.:
+> WT1.bam<br/>WT2.bam<br/>KO1.bam<br/>KO2.bam
+In the case of just one replicate, BAM files must be renamed "WT.bam" or "KO.bam", correspondingly.
 
 Using 45 threads for freebayes and assuming replicates per each genotype:
 
