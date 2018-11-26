@@ -64,10 +64,11 @@ Download Mouse Reference Genome mm10:
 >wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.2bit
 
 Download faToTwoBit script, available for linux and macOSX at http://hgdownload.cse.ucsc.edu/admin/exe/.
->Convert 2bit format to fasta: 
+Convert 2bit format to fasta: 
 >./twoBitToFa mm10.2bit mm10.fa
 
-Index fasta file with samtools: samtools faidx mm10.fa
+Index fasta file with samtools: 
+>samtools faidx mm10.fa
 
 ### Obtaining and installing Freebayes:
 Cloning Freebayes folder in current directory: 
