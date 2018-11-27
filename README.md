@@ -98,26 +98,22 @@ After make, binaries and scripts can be copied in /usr/local/bin with sudo. In v
 To check vcflib scripts, type vcf in terminal followed by TAB and display all posibilities
 
 ### Obtaining and Installing BEDTools
-Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/content/installation.html
-. Users with privileges can accomplish with sudo: 
+Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/content/installation.html. Users with privileges can accomplish with sudo: 
 
 >sudo apt-get install bedtools
 
 ### Obtaining and installing SAMtools
-Complete instructions can be found in README and in http://www.htslib.org/
-. Users with privileges can accomplish with sudo: 
+Complete instructions can be found in README and in http://www.htslib.org/. Users with privileges can accomplish with sudo: 
 
 >sudo apt-get install samtools
 
 ### Obtaining and installing BamTools
-Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing
-. Users with privileges can accomplish with sudo: 
+Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing. Users with privileges can accomplish with sudo: 
 
 >sudo apt install bamtools 
 
 ### Obtaining and installing bcftools
-Complete instructions can be found in README and in https://samtools.github.io/bcftools/
-. Users with privileges can accomplish with sudo: 
+Complete instructions can be found in README and in https://samtools.github.io/bcftools/. Users with privileges can accomplish with sudo: 
 
 >sudo apt install bcftools 
 
