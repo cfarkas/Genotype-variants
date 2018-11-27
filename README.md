@@ -54,6 +54,7 @@ DescTools >=0.99.23
 
 Users can execute the pipeline by using several scripts sequentially: 
 sort_bam.sh (for sorting BAM files)<br/>variant_collection.sh (for calling variants with freebayes)<br/>filtering_combined_mouse.sh (filtering and intersection of VCF files per genotype)<br/>genotype_variants_mouse.sh (obtention of KO-ligated variants and R plots).<br/>
+
 These four scripts should be present in the working folder along with the genotype_variants_mouse_linux.R script, the mm10.fa genome (in FASTA format, properly indexed) and the BAM files (unsorted) from every genotype to analyze. 
 
 ## Preeliminars:
