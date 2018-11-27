@@ -41,11 +41,11 @@ DescTools >=0.99.23
 
 ## Usage:
 
-1) Place genotype_variants.R and the VCF files (wild-type and KO/KI outputs after the galaxy pipeline) in the same folder
-2) Open genotype_variants.R file through R (go to File --> Open Script/Document)
-3) Execute all lines (Edit --> Select all, and then Edit --> Execute)
-4) A prompted window will ask for the wild-type VCF file. Select it. 
-5) A prompted window will ask for the KO/KI VCF file. Select it
+1) Place genotype_variants.R and the VCF files (wild-type and KO/KI outputs after the galaxy pipeline) in the same folder<br/>
+2) Open genotype_variants.R file through R (go to File --> Open Script/Document)<br/>
+3) Execute all lines (Edit --> Select all, and then Edit --> Execute)<br/>
+4) A prompted window will ask for the wild-type VCF file. Select it.<br/>
+5) A prompted window will ask for the KO/KI VCF file. Select it.<br/>
 6) Output: Genome-wide plot of variants per genotype (PDF file) and a summary of the Cochran-Armitage Test per chromosome (PDF file)
 
 
@@ -138,7 +138,6 @@ Using 45 threads for freebayes and assuming replicates only for the KO genotype.
 
 These lines can be also executed in BASH (see and edit Config_example.sh in scripts folder) by simply typying:
 >bash ./Config_example.sh
-###
 
 To perform these analysis, we recommend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see "README_ulimit" file for instructions to accomplish this task.
 
