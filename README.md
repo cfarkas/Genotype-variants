@@ -99,7 +99,7 @@ To check vcflib scripts, type vcf in terminal followed by TAB and display all po
 
 ### Obtaining and Installing BEDTools
 Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/content/installation.html
-.Users with privileges can accomplish with sudo: 
+. Users with privileges can accomplish with sudo: 
 
 >sudo apt-get install bedtools
 
