@@ -39,10 +39,10 @@ reshape2 >=1.4.2
 ggplot2 >=2.2.1    
 DescTools >=0.99.23
 
-These packages can be installed in R (windows/macOS/ubuntu) as follows:
+These packages can be installed in R (windows/macOS/ubuntu) by opening R and typying:
 >install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
 
-To check installation in R, open R and type
+To check installation of these packages, open R and type:
 >library(dplyr)<br/>library(gridExtra)<br/>library(reshape2)<br/>library(ggplot2)<br/>library(DescTools)<br/>
 
 ## Usage:
