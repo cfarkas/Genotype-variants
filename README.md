@@ -31,13 +31,19 @@ Inputted variants are binned every 10 million base pairs according to its chromo
 
 ## Preeliminars (R dependences):
 
-The following R/Bioconductor packages are required for the script usage (see https://www.bioconductor.org/ for installation)
+The following R packages are required for the script usage (see https://www.r-project.org/ for R installation)
 
 dplyr >=0.7.4       
 gridExtra >=2.3     
 reshape2 >=1.4.2    
 ggplot2 >=2.2.1    
 DescTools >=0.99.23
+
+These packages can be installed in R (windows/macOS/ubuntu) as follows:
+>install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
+
+To check installation in R, open R and type
+>library(dplyr)<br/>library(gridExtra)<br/>library(reshape2)<br/>library(ggplot2)<br/>library(DescTools)<br/>
 
 ## Usage:
 
