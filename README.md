@@ -147,6 +147,14 @@ These lines can be also executed in BASH (see and edit Config_example.sh in scri
 
 To perform these analysis, we recommend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see "README_ulimit" file for instructions to accomplish this task.
 
+## Test
+1) Download WT, KO1, KO2, KO3 BAM alignments (Real datasets done in mouse embryonic fibroblasts) from 
+https://usegalaxy.org:/u/carlosfarkas/h/test-sall2-ko-rna-seq-gse123168 . 
+
+2) Manually rename the four files as WT.bam, KO1.bam, KO2.bam and KO3.bam
+
+3) Place the four renamed BAM files in the Test folder, open a terminal and run the following lines:
+
 ## Support
 
 Please report any issues or questions by email to cfarkas@udec.cl or carlosfarkas@gmail.com.
