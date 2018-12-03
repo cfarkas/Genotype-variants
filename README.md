@@ -154,6 +154,9 @@ https://usegalaxy.org:/u/carlosfarkas/h/test-sall2-ko-rna-seq-gse123168 .
 2) Manually rename the four files as WT.bam, KO1.bam, KO2.bam and KO3.bam
 
 3) Place the four renamed BAM files in the Test folder, open a terminal and run the following lines:
+> bash ./Config_test.sh 40
+
+Step (3) will run the pipeline using 40 threads as specified. 
 
 ## Support
 
