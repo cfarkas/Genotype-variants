@@ -1,4 +1,4 @@
-# Genotype-variants: An streamlined pipeline for the genetic characterization of Genetically Engineered Mice (GEM) models based on NGS data. 
+# Genotype-variants: A streamlined pipeline for the genetic characterization of Genetically Engineered Mice (GEM) models based on NGS data. 
 
 ## Pipeline Outline
 
@@ -121,7 +121,11 @@ Complete instructions can be found in README and in https://github.com/pezmaster
 ### Obtaining and installing bcftools
 Complete instructions can be found in README and in https://samtools.github.io/bcftools/. Users with privileges can accomplish with sudo: 
 
->sudo apt install bcftools 
+>sudo apt install bcftools
+
+### R dependences
+As mentioned, several packages needs to be installed in R. Open a shell, type R and then type:
+>install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
 
 ## Execution:
 Place the following scripts in a folder:
