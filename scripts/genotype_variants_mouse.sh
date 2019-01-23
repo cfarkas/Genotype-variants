@@ -32,6 +32,12 @@ if [ "$1" == "--help" ]; then
   exit 0
 fi
 
+[ $# -eq 0 ] && { echo "Usage: bash ./`basename $0` {WT intersected variants} {KO intersected variants} {REFERENCE}"; exit 1; }
+
+if [ $# -ne 3 ]; then
+  echo 1>&2 "Usage: bash ./`basename $0` {WT intersected variants} {KO intersected variants} {REFERENCE}"
+  exit 3
+fi
 
 dir1=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 mkdir R_inputs
