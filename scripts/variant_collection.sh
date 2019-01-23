@@ -84,6 +84,13 @@ if [ "$1" == "--help" ]; then
   exit 0
 fi
 
+[ $# -eq 0 ] && { echo "Usage: bash ./`basename $0` {REFERENCE} {THREADS}"; exit 1; }
+
+if [ $# -ne 2 ]; then
+  echo 1>&2 "Usage: bash ./`basename $0` {REFERENCE} {THREADS}"
+  exit 3
+fi
+
 begin=`date +%s`
 dir1=$(cd -P -- "$(dirname -- "$0")" && pwd -P)
 
