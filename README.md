@@ -21,7 +21,7 @@ Go to https://usegalaxy.org/ and create an account. Users can also install Galax
 2) FreeBayes: Simple diploid calling, default settings 
 3) VCFfilter:  We suggest  -f "QUAL > 30 " (Depth over 10 reads), "DP > 10" (minimum Phred-scaled probability of error over 30) 
 4) VcfAllelicPrimitives: Split allelic primitives into multiple VCF lines, default settings (Galaxy Version 0.0.3)
-5) VCF-VCF Intersect: on WT and Null VCF files, mm10 build
+5) VCF-VCF Intersect: on WT and KO VCF files, mm10 build
 
 At this step, users needs to execute the genotype_variants.R script (on windows or Mac OSX)
 
