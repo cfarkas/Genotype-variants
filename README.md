@@ -71,7 +71,8 @@ Download Mouse Reference Genome mm10:
 >wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.2bit
 
 Download faToTwoBit script, available for linux and macOSX at http://hgdownload.cse.ucsc.edu/admin/exe/.
-Convert 2bit format to fasta: 
+chmod 755 script and convert 2bit format to fasta:
+> chmod 755 twoBitToFa
 >./twoBitToFa mm10.2bit mm10.fa
 
 Finally, index fasta file with samtools: 
