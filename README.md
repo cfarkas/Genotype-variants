@@ -70,9 +70,9 @@ These four scripts should be present in the working folder along with the genoty
 Download Mouse Reference Genome mm10: 
 >wget http://hgdownload.cse.ucsc.edu/goldenpath/mm10/bigZips/mm10.2bit
 
-Download faToTwoBit script, available for linux and macOSX at http://hgdownload.cse.ucsc.edu/admin/exe/. /<br/>
+Download faToTwoBit script, available for linux and macOSX at http://hgdownload.cse.ucsc.edu/admin/exe/<br/>
 Users needs to change script permissions and convert 2bit format to fasta:
-> chmod 755 twoBitToFa/<br/>
+> chmod 755 twoBitToFa<br/>
 >./twoBitToFa mm10.2bit mm10.fa
 
 Finally, index fasta file with samtools: 
