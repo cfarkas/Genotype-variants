@@ -109,20 +109,25 @@ Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/
 
 >sudo apt-get install bedtools
 
-### Obtaining and installing SAMtools
-Complete instructions can be found in README and in http://www.htslib.org/. Users with privileges can accomplish with sudo: 
+### Obtaining and installing up-to-date SAMtools, bcftools and htslib (version 1.9)
+Old samtools version will not work. Users needs to install version up to date of these three packages (please see http://www.htslib.org/download/). This can be accomplish downloading every package, decompressing it and doing the following:
+```
+cd samtools-1.9    # and similarly for bcftools and htslib
+sudo ./configure --prefix=/usr/local/bin
+sudo make
+sudo make install
+sudo cp samtools /usr/local/bin/    # this step is only for samtools and bcftools. 
+```
+Then in a terminal type
+>samtools<br>bcftools
 
->sudo apt-get install samtools
+to check 1.9 versions (using htslib v1.9)
+
 
 ### Obtaining and installing BamTools
 Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing. Users with privileges can accomplish with sudo: 
 
 >sudo apt install bamtools 
-
-### Obtaining and installing bcftools
-Complete instructions can be found in README and in https://samtools.github.io/bcftools/. Users with privileges can accomplish with sudo: 
-
->sudo apt install bcftools
 
 ### R dependences
 As mentioned, several packages needs to be installed in R. Open a shell, type R and then type:
