@@ -133,7 +133,7 @@ Place the following scripts in a folder:
 > sort_bam.sh<br/>variant_collection.sh<br/>filtering_combined_mouse.sh<br/>genotype_variants_mouse.sh<br/>genotype_variants_mouse_linux.R
 
 The reference genome for freebayes:
-> mm10.fa (indexed with samtools faidx)
+> mm10.fa (properly indexed with samtools faidx: e.g.: samtools faidx mm10.fa)
 
 and the renamed BAM files from wild-type (WT) and knockout (KO) genotypes with the "WT" and "KO" prefix. e.g.:
 > WT1.bam<br/>WT2.bam<br/>KO1.bam<br/>KO2.bam<br/>
