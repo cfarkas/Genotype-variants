@@ -80,27 +80,29 @@ Finally, index fasta file with samtools:
 
 ### Obtaining and installing Freebayes and vcflib:
 Clone Freebayes folder in current directory: 
->git clone --recursive git://github.com/ekg/freebayes.git
+```
+git clone --recursive git://github.com/ekg/freebayes.git
 
 #Enter Freebayes directory and make:
->cd freebayes/<br/>make
+cd freebayes/<br/>make
 
 #To install to e.g. /usr/local/bin (default), type:
->sudo make install
+sudo make install
 
 #To check installation, type in terminal:
->freebayes<br/>bamleftalign
+freebayes<br/>bamleftalign
 
-# Installing vcflib (in freebayes folder):
+## Installing vcflib (in freebayes folder):
 
-Enter vcflib directory and make
->cd vcflib/<br/>make   
+#Enter vcflib directory and make
+cd vcflib/<br/>make   
 
-After make, binaries and scripts can be copied in /usr/local/bin with sudo. In vcflib/ directory:
+#After make, binaries and scripts can be copied in /usr/local/bin with sudo. In vcflib/ directory:
 
->sudo cp scripts/* /usr/local/bin/<br/>sudo cp bin/* /usr/local/bin/
+sudo cp scripts/* /usr/local/bin/<br/>sudo cp bin/* /usr/local/bin/
 
-To check vcflib scripts, type vcf in terminal followed by TAB and display all posibilities
+#To check vcflib scripts, type vcf in terminal followed by TAB and display all posibilities
+```
 
 ### Obtaining and Installing BEDTools
 Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/content/installation.html. Users with privileges can accomplish with sudo: 
