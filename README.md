@@ -92,6 +92,7 @@ git clone --recursive git://github.com/ekg/freebayes.git
 cd freebayes
 make
 sudo make install
+sudo cp scripts/* /usr/local/bin/
 
 #To check installation, type in terminal:
 freebayes
