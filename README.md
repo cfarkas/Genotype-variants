@@ -78,22 +78,20 @@ Users needs to change script permissions and convert 2bit format to fasta:
 Finally, index fasta file with samtools: 
 >samtools faidx mm10.fa
 
-### Obtaining and installing Freebayes:
+### Obtaining and installing Freebayes and vcflib:
 Clone Freebayes folder in current directory: 
 >git clone --recursive git://github.com/ekg/freebayes.git
 
-Enter Freebayes directory and make:
+#Enter Freebayes directory and make:
 >cd freebayes/<br/>make
 
-To install to e.g. /usr/local/bin (default), type:
+#To install to e.g. /usr/local/bin (default), type:
 >sudo make install
 
-To check installation, type in terminal:
+#To check installation, type in terminal:
 >freebayes<br/>bamleftalign
 
-### Obtaining and installing vcflib:
-Clone vcflib folder in current directory:
->git clone --recursive git://github.com/vcflib/vcflib.git
+# Installing vcflib (in freebayes folder):
 
 Enter vcflib directory and make
 >cd vcflib/<br/>make   
