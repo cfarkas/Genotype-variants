@@ -110,19 +110,19 @@ Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/
 >sudo apt-get install bedtools
 
 ### Obtaining and installing up-to-date SAMtools, bcftools and htslib (version 1.9)
-Old samtools version will not work. Users needs to install version up to date of these three packages, first installing htslib and then samtools with bcftools (please see http://www.htslib.org/download/). This can be accomplish downloading every package, decompressing it and doing the following:
+Old samtools version will not work. Users needs to install version up to date of these three packages. Users can first install htslib v1.9 and then samtools with bcftools v1.9, respectively. For downloading these packages, see http://www.htslib.org/download/). The latter can be accomplish by downloading the three packages, decompressing it, and doing the following:
 ```
-cd samtools-1.9    # and similarly for bcftools and htslib
+cd htslib-1.9    # and similarly for bcftools and samtools
 sudo ./configure --prefix=/usr/local/bin
 sudo make
 sudo make install
-sudo cp samtools /usr/local/bin/    # this step is only for samtools and bcftools. 
+# this step is only for samtools and bcftools...
+sudo cp samtools /usr/local/bin/
 ```
 Then in a terminal type
 >samtools<br>bcftools
 
 to check 1.9 versions (using htslib v1.9)
-
 
 ### Obtaining and installing BamTools
 Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing. Users with privileges can accomplish with sudo: 
