@@ -29,7 +29,7 @@ At this step, users needs to execute the genotype_variants.R script (on windows 
 
 Inputted variants are binned every 10 million base pairs according to its chromosomal coordinates (mm10 build: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.26) and ordered in a contingency table. After this, frequency distribution of variants is tested by applying the Cochran-Armitage test for trend distribution, available in the DescTools package in R. (https://cran.r-project.org/web/packages/DescTools/index.html). The program will generate a genome-wide plot of variants per genotype based on the ggplot2 R package (https://cran.r-project.org/web/packages/ggplot2/index.html) and a summary of chromosomes containing KO/KI-linked variants, based on the frequency distribution of wild-type and KO/KI variants.
 
-## Preeliminars (R dependences):
+## Preeliminars (For R ≥ 3.3.0):
 
 The following R packages are required for the script usage (see https://www.r-project.org/ for R installation)
 
@@ -141,7 +141,7 @@ Complete instructions can be found in README and in https://github.com/pezmaster
 >sudo apt install tabix
 
 ### R dependences
-As mentioned, several packages needs to be installed in R. Open a shell, type R and then type:
+As mentioned, several packages needs to be installed in R (≥ 3.3.0). Open a shell, type R and then type:
 >install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
 
 ## Execution:
