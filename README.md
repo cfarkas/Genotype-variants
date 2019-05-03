@@ -134,7 +134,11 @@ to check 1.9 versions (using htslib v1.9)
 ### Obtaining and installing BamTools
 Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing. Users with privileges can accomplish with sudo: 
 
->sudo apt install bamtools 
+>sudo apt install bamtools
+
+### Obtaining and installing tabix (Version: >=1.2.1)
+
+>sudo apt install tabix
 
 ### R dependences
 As mentioned, several packages needs to be installed in R. Open a shell, type R and then type:
