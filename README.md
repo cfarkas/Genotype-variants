@@ -23,9 +23,14 @@ Go to https://usegalaxy.org/ and create an account. Users can also install Galax
 4) VcfAllelicPrimitives: Split allelic primitives into multiple VCF lines, default settings (Galaxy Version 0.0.3)
 5) VCF-VCF Intersect: on WT and KO VCF files, mm10 build
 
-At this step, users needs to execute the genotype_variants.R script (on windows or Mac OSX)
+At this step, users can to execute the genotype_variants.R script (on windows or Mac OSX) to visualize variants in the intersected VCF files.
 
-## Script Outline:
+6) VCFAnnotateGenotypes: on KO intersected VCF files using WT intersected VCF file
+7) Filter and Sort: select lines that NOT match "added-genotypes"
+
+Output: KO-linked variants by chromosome 
+
+## R Script Outline:
 
 Inputted variants are binned every 10 million base pairs according to its chromosomal coordinates (mm10 build: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.26) and ordered in a contingency table. After this, frequency distribution of variants is tested by applying the Cochran-Armitage test for trend distribution, available in the DescTools package in R. (https://cran.r-project.org/web/packages/DescTools/index.html). The program will generate a genome-wide plot of variants per genotype based on the ggplot2 R package (https://cran.r-project.org/web/packages/ggplot2/index.html) and a summary of chromosomes containing KO/KI-linked variants, based on the frequency distribution of wild-type and KO/KI variants.
 
