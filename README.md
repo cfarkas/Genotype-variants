@@ -34,23 +34,37 @@ Output: KO-linked variants by chromosome
 
 Inputted variants are binned every 10 million base pairs according to its chromosomal coordinates (mm10 build: https://www.ncbi.nlm.nih.gov/assembly/GCF_000001635.26) and ordered in a contingency table. After this, frequency distribution of variants is tested by applying the Cochran-Armitage test for trend distribution, available in the DescTools package in R. (https://cran.r-project.org/web/packages/DescTools/index.html). The program will generate a genome-wide plot of variants per genotype based on the ggplot2 R package (https://cran.r-project.org/web/packages/ggplot2/index.html) and a summary of chromosomes containing KO/KI-linked variants, based on the frequency distribution of wild-type and KO/KI variants.
 
-## Preeliminars (For R ≥ 3.3.0):
+## Preeliminars:
+### Obtaining and installing R (>=3.5.0)
+See https://cloud.r-project.org/ for R installation in linux/ubuntu/windows/(Mac) OS X. R version 3.2.3 comes from default in Ubuntu 16.04 LTS but users with older Ubuntu distributions must upgrade R. A way accomplish this can be the following:
+```
+# Removing R from system
+sudo apt-get remove r-base-core
 
-The following R packages are required for the script usage (see https://www.r-project.org/ for R installation)
+# Editing sources.list 
+sudo su
+echo "deb https://cloud.r-project.org/bin/linux/ubuntu xenial-cran35/" >> /etc/apt/sources.list
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9
+
+# Installing R (version 3.6.0)
+sudo apt update; sudo apt install r-base
+exit
+R
+```
+
+The following R packages are required for the script usages:
 
 dplyr >=0.7.4       
 gridExtra >=2.3     
 reshape2 >=1.4.2    
-ggplot2 >=2.2.1    
-DescTools >=0.99.23
+ggplot2 >=2.2.1
+DescTools >=0.99
 
-These packages can be installed in R (windows/macOS/ubuntu) by opening R and typying:
->install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
+These packages can be installed in R (macOS/ubuntu) by opening R and typying:
+>install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")
+<br/>install.packages("DescTools")
 
-To check installation of these packages, open R and type:
->library(dplyr)<br/>library(gridExtra)<br/>library(reshape2)<br/>library(ggplot2)<br/>library(DescTools)<br/>
-
-## Usage:
+## Usage():
 
 1) Place genotype_variants.R and the VCF files (wild-type and KO/KI outputs after the galaxy pipeline) in the same folder<br/>
 2) Open genotype_variants.R file through R (go to File --> Open Script/Document)<br/>
