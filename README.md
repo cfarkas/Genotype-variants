@@ -10,10 +10,10 @@ To collect variants, BAM files from the alignment of RNA-seq/WES/WGS reads are s
 The pipeline can be executed in two ways:
 
 A) Galaxy to obtain the intersected VCF files per genotype and then in R (from windows and Max OSX)
-B) Fully automated in BASH by using a simple config file.
+B) Fully automated in BASH by using scripts.
 
 
-# Galaxy Pipeline: 
+# A) Galaxy Pipeline: 
 
 Go to https://usegalaxy.org/ and create an account. Users can also install Galaxy locally following these instructions: https://galaxyproject.org/admin/get-galaxy/
 
@@ -75,7 +75,7 @@ These packages can be installed in R (macOS/ubuntu) by opening R and typying:
 
 
 
-# BASH pipeline:
+# B) BASH pipeline:
 
 Users can execute the pipeline by using several scripts sequentially:<br/>
 
@@ -132,8 +132,9 @@ sudo cp bin/* /usr/local/bin/
 
 ### Obtaining and Installing BEDTools
 Complete instructions can be found in https://bedtools.readthedocs.io/en/latest/content/installation.html. Users with privileges can accomplish with sudo: 
-
->sudo apt-get install bedtools
+```
+sudo apt-get install bedtools
+```
 
 ### Obtaining and installing up-to-date SAMtools, bcftools and htslib (version 1.9)
 Old samtools version will not work. Users needs to install version up to date of these three packages. Users can first install htslib v1.9 and then samtools with bcftools v1.9, respectively. For downloading these packages, see http://www.htslib.org/download/). The latter can be accomplish by downloading the three packages, decompressing it, and doing the following:
@@ -152,16 +153,24 @@ to check 1.9 versions (using htslib v1.9)
 
 ### Obtaining and installing BamTools
 Complete instructions can be found in README and in https://github.com/pezmaster31/bamtools/wiki/Building-and-installing. Users with privileges can accomplish with sudo: 
-
->sudo apt install bamtools
+```
+sudo apt install bamtools
+```
 
 ### Obtaining and installing tabix (Version: >=1.2.1)
-
->sudo apt install tabix
+```
+sudo apt install tabix
+```
 
 ### R dependences
 As mentioned, several packages needs to be installed in R (≥ 3.3.0). Open a shell, type R and then type:
->install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
+```
+install.packages("dplyr")
+install.packages("gridExtra")
+install.packages("reshape2")
+install.packages("ggplot2")
+install.packages("DescTools")
+```
 
 ## Execution (with replicates in both genotypes):
 Place the following scripts in a folder:
