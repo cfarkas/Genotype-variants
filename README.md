@@ -23,7 +23,7 @@ Go to https://usegalaxy.org/ and create an account. Users can also install Galax
 4) VcfAllelicPrimitives: Split allelic primitives into multiple VCF lines, default settings (Galaxy Version 0.0.3)
 5) VCF-VCF Intersect: on WT and KO VCF files, mm10 build
 
-At this step, users can to execute the genotype_variants.R script (on windows or Mac OSX) to visualize variants in the intersected VCF files.
+At this step, users can to execute the genotype_variants.R script (on windows or macOS) to visualize variants in the intersected VCF files.
 
 6) VCFAnnotateGenotypes: on KO intersected VCF files using WT intersected VCF file
 7) Filter and Sort: select lines that NOT match "added-genotypes"
@@ -75,7 +75,7 @@ These packages can be installed in R (macOS/ubuntu) by opening R and typying:
 
 
 
-# B) BASH pipeline (for Ubuntu, UNIX, MACOSX users):
+# B) BASH pipeline (for Ubuntu, UNIX, macOS users):
 
 These users can execute the pipeline by using several scripts sequentially:
 
