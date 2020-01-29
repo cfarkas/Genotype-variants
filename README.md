@@ -163,7 +163,7 @@ Complete instructions can be found in README and in https://github.com/pezmaster
 As mentioned, several packages needs to be installed in R (≥ 3.3.0). Open a shell, type R and then type:
 >install.packages("dplyr")<br/>install.packages("gridExtra")<br/>install.packages("reshape2")<br/>install.packages("ggplot2")<br/>install.packages("DescTools")<br/>
 
-## Execution:
+## Execution (with replicates in both genotypes):
 Place the following scripts in a folder:
 > sort_bam.sh<br/>variant_collection.sh<br/>filtering_combined_mouse.sh<br/>genotype_variants_mouse.sh<br/>genotype_variants_mouse_linux.R
 
@@ -172,7 +172,6 @@ The reference genome for freebayes:
 
 and the renamed BAM files from wild-type (WT) and knockout (KO) genotypes with the "WT" and "KO" prefix. e.g.:
 > WT1.bam<br/>WT2.bam<br/>KO1.bam<br/>KO2.bam<br/>
-#In the case of just one replicate, BAM files must be renamed "WT.bam" or "KO.bam", correspondingly.
 
 Open a terminal and paste the following lines. Using 45 threads for freebayes and assuming replicates per each genotype:
 
@@ -187,8 +186,10 @@ bash ./genotype_variants_mouse.sh WT.intersection.vcf KO.intersection.vcf /path/
 These lines can be also edited in a BASH script (see and edit Config_example.sh in scripts folder). The execution can be as follows:
 >bash ./Config_example.sh
 
-### No replicates in one genotype?:
-In this example, we will assume replicates only for the KO genotype. In this case, users need to change the "intersection" prefix for "filtered" (e.g. with a single replicate in WT):
+## Execution (No replicates in one genotype):
+In the case of just one replicate, BAM files must be renamed "WT.bam" or "KO.bam", correspondingly.
+In this example, we will assume replicates only for the KO genotype. Users need to change the "intersection" prefix for "filtered" (e.g. with a single replicate in WT) and execute as follows: 
+
 ```
 bash ./sort_bam.sh 45
 bash ./variant_collection.sh /path/to/mm10.fa 45
