@@ -13,7 +13,7 @@ A) Galaxy to obtain the intersected VCF files per genotype and then in R (from w
 B) Fully automated in BASH by using scripts.
 
 
-# A) Galaxy Pipeline: 
+# A) Galaxy Pipeline (Useful for Windows users): 
 
 Go to https://usegalaxy.org/ and create an account. Users can also install Galaxy locally following these instructions: https://galaxyproject.org/admin/get-galaxy/
 
@@ -75,7 +75,7 @@ These packages can be installed in R (macOS/ubuntu) by opening R and typying:
 
 
 
-# B) BASH pipeline:
+# B) BASH pipeline (for Ubuntu, UNIX, MACOSX users):
 
 Users can execute the pipeline by using several scripts sequentially:<br/>
 
