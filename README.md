@@ -207,7 +207,9 @@ cd vcf_outputs/
 bash ./genotype_variants_mouse.sh WT.filtered.vcf KO.intersection.vcf /path/to/mm10.fa
 ```
 
-To perform these analysis, we recommend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see "README_ulimit" file for instructions to accomplish this task.
+## Execution (No replicates in both genotypes):
+See: https://github.com/cfarkas/variants2genes
+
 
 ## Test
 1) Download WT, KO1, KO2, KO3 BAM alignments (sub-sampĺed datasets from mouse embryonic fibroblasts) from 
@@ -219,6 +221,9 @@ https://usegalaxy.org:/u/carlosfarkas/h/test-sall2-ko-rna-seq-gse123168-1 .
 > bash ./test.sh 40
 
 Step (3) will run the pipeline using 40 threads as specified. 
+
+## Note
+To perform these analysis, we recommend to increase open file limit to 1000000 in the cluster/workstation in use. Please, see "README_ulimit" file for instructions to accomplish this task.
 
 ## Support
 
