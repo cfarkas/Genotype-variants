@@ -78,8 +78,7 @@ These packages can be installed in R (macOS/ubuntu) by opening R and typying:
 # B) BASH pipeline (for Ubuntu, UNIX, macOS users):
 
 These users can execute the pipeline by using several scripts sequentially:
-
-<br/>sort_bam.sh (for sorting BAM files)<br/>variant_collection.sh (for calling variants with freebayes)<br/>filtering_combined_mouse.sh (filtering and intersection of VCF files per genotype)<br/>genotype_variants_mouse.sh (KO-ligated variants and R plots generation).<br/>
+<br/>- sort_bam.sh (for sorting BAM files)<br/>- variant_collection.sh (for calling variants with freebayes)<br/>- filtering_combined_mouse.sh (filtering and intersection of VCF files per genotype)<br/>- genotype_variants_mouse.sh (KO-ligated variants and R plots generation).<br/>
 
 These four scripts should be present in the working folder along with the genotype_variants_mouse_linux.R script, the mm10.fa genome (in FASTA format, properly indexed) and the BAM files (unsorted) from every genotype to analyze. 
 
